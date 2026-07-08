@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Estimation immobilière gratuite à Draveil | Francis Fernandes - Conseiller iad</title>
-<meta name="description" content="Estimez gratuitement votre bien à Draveil (La Villa, Mainville, Champrosay, Paris-Jardins) avec Francis Fernandes, conseiller iad indépendant.">
+<title>Histoire & qualité de vie à Draveil | Francis Fernandes - Conseiller iad</title>
+<meta name="description" content="Histoire, patrimoine et qualité de vie à Draveil : tout savoir sur la ville avant d'acheter ou vendre, par Francis Fernandes, conseiller iad.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -214,83 +214,9 @@
     .quality-grid{grid-template-columns:1fr;}
   }
 
-
-  .hero{position:relative;overflow:hidden;background:var(--iad-tint-2);padding:72px 0 110px;}
-  .hero::before{content:"";position:absolute;top:-160px;right:-120px;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #DCEBFF 0%, rgba(220,235,255,0) 70%);animation:blobMove 14s ease-in-out infinite;pointer-events:none;}
-  .hero::after{content:"";position:absolute;bottom:-200px;left:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle at 60% 40%, rgba(11,95,255,.08) 0%, rgba(11,95,255,0) 70%);animation:blobMove 18s ease-in-out infinite reverse;pointer-events:none;}
-  .hero-watermark{position:absolute;top:0;right:0;width:58%;height:100%;background-size:cover;background-position:center;opacity:.3;filter:grayscale(.6) contrast(1.05);-webkit-mask-image:linear-gradient(to left, black 45%, transparent 95%);mask-image:linear-gradient(to left, black 45%, transparent 95%);pointer-events:none;}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;}
-  .hero h1{font-size:clamp(2.2rem,4.2vw,3.4rem);font-weight:800;color:var(--iad-navy);line-height:1.08;margin:16px 0 20px;}
-  .hero h1 span{color:var(--iad-blue);}
-  .hero p.lead{font-size:1.08rem;color:var(--ink-soft);max-width:480px;margin-bottom:28px;}
-  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px;}
-  .trust-strip{display:flex;gap:28px;flex-wrap:wrap;padding-top:24px;border-top:1px solid var(--line);}
-  .trust-item{display:flex;flex-direction:column;}
-  .trust-item strong{font-family:'Sora',sans-serif;font-size:1.35rem;color:var(--iad-navy);}
-  .trust-item span{font-size:.78rem;color:var(--ink-soft);}
-  .sim-card{position:relative;background:linear-gradient(160deg,var(--iad-navy) 0%, var(--iad-navy-2) 55%, var(--iad-blue) 130%);background-size:200% 200%;border-radius:24px;padding:34px;color:#fff;box-shadow:var(--shadow);animation:floatY 6s ease-in-out infinite, gradientShift 10s ease infinite;}
-  .sim-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;}
-  .sim-head h3{font-size:1.05rem;font-weight:700;}
-  .sim-head .pill{background:rgba(255,255,255,.14);font-size:.68rem;font-weight:700;padding:5px 12px;border-radius:100px;letter-spacing:.05em;}
-  .sim-field{margin-bottom:16px;}
-  .sim-field label{display:block;font-size:.76rem;color:rgba(255,255,255,.7);margin-bottom:6px;font-weight:600;}
-  .sim-field select, .sim-field input{width:100%;padding:13px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.08);color:#fff;font-size:.95rem;font-family:'Inter',sans-serif;}
-  .sim-field select option{color:#0B1220;}
-  .sim-field input::placeholder{color:rgba(255,255,255,.45);}
-  .sim-result{margin-top:22px;background:rgba(255,255,255,.1);border-radius:16px;padding:20px;display:flex;justify-content:space-between;align-items:center;}
-  .sim-result .big{font-family:'Sora',sans-serif;font-size:1.9rem;font-weight:800;}
-  .sim-result .small{font-size:.72rem;color:rgba(255,255,255,.65);}
-  .sim-note{font-size:.68rem;color:rgba(255,255,255,.55);margin-top:14px;text-align:center;}
-
-  .ville-mood{position:relative;height:440px;overflow:hidden;background:var(--iad-navy);}
-  .ville-mood-caption{position:absolute;top:0;left:0;right:0;z-index:2;padding:32px 36px 70px;background:linear-gradient(180deg, rgba(7,27,66,.92) 0%, rgba(7,27,66,.5) 55%, transparent 100%);pointer-events:none;}
-  .ville-mood-caption p{color:#fff;font-size:1.1rem;font-family:'Sora',sans-serif;font-weight:600;max-width:560px;margin-top:8px;}
-  .marquee-track{position:absolute;top:0;left:0;height:100%;display:flex;gap:12px;animation:marqueeScroll 24s linear infinite;will-change:transform;}
-  .marquee-track img{height:100%;width:400px;object-fit:cover;flex-shrink:0;filter:brightness(.85) sepia(.1);}
-  @keyframes marqueeScroll{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
-  @media (prefers-reduced-motion: reduce){ .marquee-track{animation:none;} }
-  @media (max-width:640px){ .ville-mood{height:260px;} .marquee-track img{width:260px;} }
-
-  .ville-mood-noimg{position:relative;overflow:hidden;background:linear-gradient(120deg,var(--iad-navy),var(--iad-navy-2) 55%,var(--iad-blue));padding:70px 0;text-align:center;}
-  .ville-mood-noimg::before{content:"";position:absolute;top:-140px;right:-100px;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle, rgba(255,255,255,.08) 0%, transparent 70%);animation:blobMove 16s ease-in-out infinite;}
-  .ville-mood-noimg .wrap{position:relative;z-index:1;}
-  .ville-mood-noimg h2{color:#fff;font-size:clamp(1.6rem,3vw,2.2rem);margin-top:10px;}
-  .ville-mood-noimg p{color:rgba(255,255,255,.72);max-width:640px;margin:14px auto 0;}
-  .quartier-chip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:40px;text-align:left;}
-  .quartier-chip{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:20px 22px;}
-  .quartier-chip h4{color:#fff;font-size:1rem;margin-bottom:6px;}
-  .quartier-chip p{color:rgba(255,255,255,.65);font-size:.85rem;margin:0;}
-
-  .quartiers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;}
-  .quartier-card{position:relative;border-radius:18px;overflow:hidden;height:260px;text-decoration:none;box-shadow:var(--shadow);}
-  .quartier-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
-  .quartier-card:hover img{transform:scale(1.08);}
-  .qcard-caption{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:20px;background:linear-gradient(0deg, rgba(0,0,0,.8) 0%, rgba(0,0,0,.05) 65%, transparent 100%);}
-  .qcard-caption h4{color:#fff;font-size:1.15rem;margin-bottom:4px;}
-  .qcard-caption span{color:rgba(255,255,255,.75);font-size:.8rem;}
-  @media (max-width:768px){ .quartiers-grid{grid-template-columns:1fr;} }
-
-  .feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;}
-  .feature-card{background:var(--iad-tint-2);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;transition:.25s;}
-  .feature-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);background:#fff;}
-  .feature-card .ic{width:48px;height:48px;border-radius:14px;background:var(--iad-blue);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:16px;}
-  .feature-card h3{color:var(--iad-navy);font-size:1.05rem;margin-bottom:8px;}
-  .feature-card p{color:var(--ink-soft);font-size:.88rem;margin-bottom:14px;}
-  .feature-card a{color:var(--iad-blue);font-weight:700;font-size:.85rem;}
-
-  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-  .testi{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 10px 30px -20px rgba(11,31,90,.25);}
-  .stars{color:var(--gold);letter-spacing:2px;margin-bottom:14px;font-size:.95rem;}
-  .testi p{font-size:.93rem;color:var(--ink-soft);margin-bottom:18px;}
-  .testi .who{display:flex;align-items:center;gap:12px;}
-  .avatar{width:38px;height:38px;border-radius:50%;background:var(--iad-tint);color:var(--iad-blue);font-weight:700;display:flex;align-items:center;justify-content:center;font-size:.85rem;}
-  .who strong{display:block;font-size:.88rem;color:var(--iad-navy);}
-  .who span{font-size:.75rem;color:var(--ink-soft);}
-
-  @media (max-width:980px){ .hero-grid{grid-template-columns:1fr;} .testi-grid{grid-template-columns:1fr;} }
 </style>
 </head>
-<body data-source="site iad Francis Fernandes - Draveil">
+<body data-source="site iad Francis Fernandes - Histoire & vie locale">
 <header>
   <div class="nav wrap">
     <a href="index.html" class="logo">
@@ -298,9 +224,9 @@
       <div>iad <small>FRANCIS FERNANDES · CONSEILLER</small></div>
     </a>
     <nav class="links">
-      <a href="index.html" class="active">Accueil</a>
+      <a href="index.html">Accueil</a>
       <a href="index.html#quartiers">Quartiers</a>
-      <a href="histoire-qualite-de-vie.html">Histoire & vie locale</a>
+      <a href="histoire-qualite-de-vie.html" class="active">Histoire & vie locale</a>
       <a href="ecoles-carte-scolaire.html">Écoles & carte scolaire</a>
       <a href="calendrier.html">Agenda</a>
       <a href="carte-interactive.html">Carte interactive</a>
@@ -309,151 +235,58 @@
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-watermark" style="background-image:url('images/draveil-chateau-moderne-1.jpg');"></div>
-  <div class="wrap hero-grid">
-    <div>
-      <span class="eyebrow reveal in-view">Conseiller iad · Draveil (91)</span>
-      <h1 class="reveal in-view">Votre bien à Draveil mérite une <span>estimation juste</span>, faite par un expert local.</h1>
-      <p class="lead reveal in-view">Francis Fernandes, conseiller iad indépendant installé à Draveil, vous accompagne avec la force du 1er réseau immobilier de France et une connaissance fine de chaque quartier — La Villa, Mainville, Champrosay, Paris-Jardins.</p>
-      <div class="hero-cta reveal in-view">
-        <a href="#simulateur" class="btn">Estimer gratuitement</a>
-        <a href="https://wa.me/33616127718" class="btn ghost">Discuter sur WhatsApp</a>
-      </div>
-      <div class="trust-strip reveal in-view">
-        <div class="trust-item"><strong>28 833</strong><span>habitants à Draveil</span></div>
-        <div class="trust-item"><strong>4</strong><span>quartiers historiques</span></div>
-        <div class="trust-item"><strong>1er</strong><span>réseau immobilier de France</span></div>
-      </div>
-    </div>
-    <div class="sim-card reveal-scale in-view" id="simulateur">
-      <div class="sim-head"><h3>Simulateur de prix au m²</h3><span class="pill">GRATUIT</span></div>
-      <div class="sim-field">
-        <label>Votre quartier</label>
-        <select id="commune">
-          <option value="3150">Draveil - La Villa</option>
-          <option value="3150">Draveil - Mainville</option>
-          <option value="3150">Draveil - Champrosay</option>
-          <option value="3150">Draveil - Paris-Jardins</option>
-          <option value="3150" selected>Draveil - autre secteur</option>
-        </select>
-      </div>
-      <div class="sim-field">
-        <label>Surface habitable (m²)</label>
-        <input type="number" id="surface" placeholder="Ex : 100">
-      </div>
-      <div class="sim-result">
-        <div><div class="big" id="resultat">—</div><div class="small">Estimation indicative</div></div>
-        <a href="#contact" class="btn" id="affiner-btn" style="background:var(--gold);box-shadow:none;">Affiner avec Francis</a>
-      </div>
-      <p class="sim-note">Estimation basée sur les prix moyens constatés à Draveil (≈ 3 150 €/m²) — une visite reste nécessaire pour un chiffrage précis.</p>
-    </div>
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Accueil</a> / Histoire &amp; vie locale</div>
+    <span class="eyebrow">Portrait de la ville</span>
+    <h1>Draveil, son <span>histoire</span> et sa qualité de vie</h1>
+    <p>De ses origines à aujourd'hui : un panorama pour mieux connaître Draveil avant d'acheter, de vendre ou simplement de vous y installer.</p>
   </div>
 </section>
 
-<section class="ville-mood">
-  <div class="ville-mood-caption">
-    <span class="eyebrow" style="color:var(--gold-2);">Draveil, hier &amp; aujourd'hui</span>
-    <p>Du bourg ancien aux bords de Seine, en passant par le château et Champrosay.</p>
-  </div>
-  <div class="marquee-track">
-    <img src="images/draveil-chateau-moderne-1.jpg" alt="Château de Draveil aujourd'hui">
-    <img src="images/draveil-mairie-rue.jpg" alt="Mairie de Draveil, carte postale ancienne">
-    <img src="images/draveil-champrosay-grande-rue.jpg" alt="Champrosay, Grande Rue, carte postale ancienne">
-    <img src="images/paris-jardins-chateau-facade.jpg" alt="Château de Paris-Jardins à Draveil">
-    <img src="images/draveil-eglise-1.jpg" alt="Église de Draveil, carte postale ancienne">
-    <img src="images/la-villa-bords-de-seine.jpg" alt="La Villa Draveil, bords de Seine">
-    <img src="images/la-villa-boulevard-des-ormes.jpg" alt="Boulevard des Ormes, La Villa Draveil">
-    <img src="images/paris-jardins-etang-reflet.jpg" alt="Paris-Jardins, maison en meulière reflétée dans l'étang">
-    <img src="images/paris-jardins-maisons-alignees.jpg" alt="Paris-Jardins, alignement de pavillons à colombages">
-    <img src="images/paris-jardins-kiosque.jpg" alt="Paris-Jardins, kiosque en fonte du parc">
-    <img src="images/draveil-chateau-moderne-1.jpg" alt="" aria-hidden="true">
-    <img src="images/draveil-mairie-rue.jpg" alt="" aria-hidden="true">
-    <img src="images/draveil-champrosay-grande-rue.jpg" alt="" aria-hidden="true">
-    <img src="images/paris-jardins-chateau-facade.jpg" alt="" aria-hidden="true">
-    <img src="images/draveil-eglise-1.jpg" alt="" aria-hidden="true">
-    <img src="images/la-villa-bords-de-seine.jpg" alt="" aria-hidden="true">
-    <img src="images/la-villa-boulevard-des-ormes.jpg" alt="" aria-hidden="true">
-    <img src="images/paris-jardins-etang-reflet.jpg" alt="" aria-hidden="true">
-    <img src="images/paris-jardins-maisons-alignees.jpg" alt="" aria-hidden="true">
-    <img src="images/paris-jardins-kiosque.jpg" alt="" aria-hidden="true">
-  </div>
-</section>
-
-<section id="pourquoi">
+<section>
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Pourquoi un conseiller iad</span>
-      <h2>La puissance d'un grand réseau, la proximité d'un indépendant</h2>
-      <p>iad combine outils digitaux performants, visibilité nationale et accompagnement personnalisé par un conseiller qui connaît votre quartier.</p>
+      <span class="eyebrow">Un peu d'histoire</span>
+      <h2>Draveil à travers les siècles</h2>
     </div>
-    <div class="pillars stagger">
-      <div class="pillar">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 12L12 4l9 8M5 10v9h5v-5h4v5h5v-9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Diffusion large et ciblée</h3>
-        <p>Votre annonce diffusée sur les plus grands portails immobiliers, portée par la notoriété du 1er réseau de mandataires en France.</p>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="era">Préhistoire <span style="color:var(--ink-soft);font-weight:600;font-size:.82rem;">— 4000 à 2000 av. J.-C.</span></div>
+        <p>Le site de Draveil, dans un méandre de la Seine et en bordure de la forêt de Sénart, est occupé dès la préhistoire : le menhir de la Pierre à Mousseaux (parc des Mousseaux) et de nombreux vestiges en bord de Seine en témoignent.</p>
       </div>
-      <div class="pillar">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z" stroke="white" stroke-width="2" stroke-linejoin="round"/></svg></div>
-        <h3>Un conseiller, pas un standard</h3>
-        <p>Un seul interlocuteur du premier contact à la remise des clés, disponible et joignable directement.</p>
+      <div class="timeline-item reveal">
+        <div class="era">Époque romaine <span style="color:var(--ink-soft);font-weight:600;font-size:.82rem;">— Ier - Ve siècle</span></div>
+        <p>Le nom de Draveil vient de « Dravernum », dérivé du gaulois « Dracvern » qui signifie « l'esprit des Aulnes ».</p>
       </div>
-      <div class="pillar">
-        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="white" stroke-width="2"/><path d="M3 9h18M8 4v2M16 4v2" stroke="white" stroke-width="2"/></svg></div>
-        <h3>Expertise du secteur</h3>
-        <p>La Villa, Mainville, Champrosay, Paris-Jardins : une lecture fine et à jour des prix pratiqués rue par rue.</p>
+      <div class="timeline-item reveal">
+        <div class="era">Haut Moyen Âge <span style="color:var(--ink-soft);font-weight:600;font-size:.82rem;">— 635</span></div>
+        <p>Par testament, Dagobert lègue la terre de Draveil à la basilique Saint-Pierre-Saint-Paul de Paris, qui appartenait à l'abbaye Sainte-Geneviève.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="apropos" style="background:var(--iad-tint-2);">
-  <div class="wrap">
-    <div class="about-grid reveal">
-      <div class="about-photo">
-        <img src="images/francis-fernandes.jpg" alt="Francis Fernandes, conseiller iad">
-        <div class="badge-1er"><span>1er</span>RÉSEAU</div>
+      <div class="timeline-item reveal">
+        <div class="era">Féodalité <span style="color:var(--ink-soft);font-weight:600;font-size:.82rem;">— XIe - XVe siècle</span></div>
+        <p>La commune se structure déjà en trois noyaux de population : le centre autour de l'église, Mainville (vignerons et bûcherons sur le plateau) et Champrosay (cadre résidentiel pour les bourgeois de Paris et malades de l'Hôtel-Dieu).</p>
       </div>
-      <div class="about-text">
-        <span class="eyebrow">Votre conseiller local</span>
-        <h2>Francis Fernandes</h2>
-        <p class="role">Agent mandataire iad — Essonne &amp; région Île-de-France</p>
-        <p class="lead" style="max-width:100%;">Plus de 18 ans de présence sur le secteur de Draveil et ses environs. Un interlocuteur unique, joignable directement, pour vendre ou estimer votre bien dans les meilleures conditions.</p>
-        <div class="about-contact">
-          <a href="tel:0616127718">06 16 12 77 18</a>
-          <a href="mailto:francis.fernandes@iadfrance.com">francis.fernandes@iadfrance.com</a>
-          <span>Essonne &amp; région Île-de-France</span>
-        </div>
-        <a href="https://www.iadfrance.fr/conseiller-immobilier/francis.fernandes" target="_blank" class="btn ghost" style="margin-top:8px;">Voir ma fiche conseiller iad</a>
+      <div class="timeline-item reveal">
+        <div class="era">XVIIIe siècle <span style="color:var(--ink-soft);font-weight:600;font-size:.82rem;">— 1720</span></div>
+        <p>Marin de La Haye, fermier général, fait édifier un château magnifique — devenu aujourd'hui le cœur du quartier de Paris-Jardins.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="quartiers">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">À la découverte de Draveil</span>
-      <h2>Les quartiers historiques de la ville</h2>
-      <p>Chaque quartier de Draveil a sa propre histoire et son propre marché immobilier.</p>
-    </div>
-    <div class="quartiers-grid stagger">
-      <a href="la-villa.html" class="quartier-card">
-        <img src="images/la-villa-boulevard-des-ormes.jpg" alt="Quartier La Villa à Draveil">
-        <div class="qcard-caption"><h4>La Villa</h4><span>1er lotissement, bord de Seine</span></div>
-      </a>
-      <a href="mainville.html" class="quartier-card">
-        <img src="images/draveil-champrosay-grande-rue.jpg" alt="Quartier Mainville à Draveil">
-        <div class="qcard-caption"><h4>Mainville</h4><span>Berceau historique de Draveil</span></div>
-      </a>
-      <a href="champrosay.html" class="quartier-card">
-        <img src="images/draveil-eglise-1.jpg" alt="Quartier Champrosay à Draveil">
-        <div class="qcard-caption"><h4>Champrosay</h4><span>Le hameau de Delacroix et Daudet</span></div>
-      </a>
-      <a href="paris-jardins.html" class="quartier-card">
-        <img src="images/paris-jardins-chateau-facade.jpg" alt="Cité Paris-Jardins à Draveil">
-        <div class="qcard-caption"><h4>Paris-Jardins</h4><span>1ʳᵉ cité-jardin de France, 1911</span></div>
-      </a>
+      <div class="timeline-item reveal">
+        <div class="era">XIXe siècle <span style="color:var(--ink-soft);font-weight:600;font-size:.82rem;">— 1867-1890</span></div>
+        <p>Premier lotissement du bord de Seine : le quartier de La Villa. La population passe de 1 000 à 2 300 habitants. Eugène Delacroix, Alphonse Daudet et Félix Nadar comptent parmi les hôtes illustres de Champrosay.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="era">Cité-jardin <span style="color:var(--ink-soft);font-weight:600;font-size:.82rem;">— 1911</span></div>
+        <p>Fondation de Paris-Jardins, première cité-jardin coopérative de France, dessinée par l'architecte Jean Walter autour du château.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="era">XXe siècle <span style="color:var(--ink-soft);font-weight:600;font-size:.82rem;">— 1957-1966</span></div>
+        <p>Construction des quartiers de Villiers, Danton, Brossolette, les Mazières, les Bergeries et l'Orée de Sénart, ainsi que du Parc de Champrosay et des rives de Seine.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="era">Aujourd'hui <span style="color:var(--ink-soft);font-weight:600;font-size:.82rem;">— 2026</span></div>
+        <p>Draveil compte 28 833 habitants et cultive l'équilibre entre vie citadine et préservation de ses quartiers champêtres, à moins de 25 km de Paris.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -461,86 +294,45 @@
 <section style="background:var(--iad-tint-2);">
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Bien plus qu'un site d'estimation</span>
-      <h2>Tout savoir sur la vie à Draveil</h2>
-      <p>Histoire, écoles, agenda et carte des repères utiles : de quoi préparer sereinement votre achat, votre vente ou votre installation.</p>
+      <span class="eyebrow">En chiffres</span>
+      <h2>Draveil aujourd'hui</h2>
     </div>
-    <div class="feature-grid stagger">
-      <div class="feature-card">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2v20M2 12h20" stroke="white" stroke-width="2"/></svg></div>
-        <h3>Histoire &amp; qualité de vie</h3>
-        <p>Des origines préhistoriques aux quartiers d'aujourd'hui : le portrait complet de Draveil.</p>
-        <a href="histoire-qualite-de-vie.html">Découvrir →</a>
-      </div>
-      <div class="feature-card">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 19V5a2 2 0 012-2h12a2 2 0 012 2v14" stroke="white" stroke-width="2"/></svg></div>
-        <h3>Écoles &amp; carte scolaire</h3>
-        <p>Toutes les écoles, collèges et lycées de Draveil, et comment connaître votre secteur.</p>
-        <a href="ecoles-carte-scolaire.html">Consulter →</a>
-      </div>
-      <div class="feature-card">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="17" rx="2" stroke="white" stroke-width="2"/><path d="M3 9h18" stroke="white" stroke-width="2"/></svg></div>
-        <h3>Agenda de la ville</h3>
-        <p>Marchés, fêtes et événements municipaux, mis à jour régulièrement.</p>
-        <a href="calendrier.html">Voir l'agenda →</a>
-      </div>
-      <div class="feature-card">
-        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z" stroke="white" stroke-width="2"/></svg></div>
-        <h3>Carte interactive</h3>
-        <p>Écoles, lieux de culte, administrations et gare : repérez-vous en un clic.</p>
-        <a href="carte-interactive.html">Explorer la carte →</a>
-      </div>
+    <div class="stat-grid reveal">
+      <div class="stat-box"><div class="big">28 833</div><div class="lbl">Habitants (Draveillois)</div></div>
+      <div class="stat-box"><div class="big">≈ 25 km</div><div class="lbl">de Paris</div></div>
+      <div class="stat-box"><div class="big">4</div><div class="lbl">quartiers historiques</div></div>
+      <div class="stat-box"><div class="big">2</div><div class="lbl">communes limitrophes en bord de Seine</div></div>
     </div>
   </div>
 </section>
 
-<section id="etapes">
+<section>
   <div class="wrap">
     <div class="section-head reveal">
-      <span class="eyebrow">Comment ça marche</span>
-      <h2>De l'estimation à la vente, en 4 étapes claires</h2>
+      <span class="eyebrow">Qualité de vie</span>
+      <h2>Pourquoi Draveil séduit ses habitants</h2>
     </div>
-    <div class="process-grid stagger">
-      <div class="step"><div class="num">01</div><h3>Simulateur en ligne</h3><p>Une première estimation indicative en 30 secondes, sans engagement.</p></div>
-      <div class="step"><div class="num">02</div><h3>Visite du bien</h3><p>Francis se déplace pour affiner l'estimation selon l'état réel et les atouts du bien.</p></div>
-      <div class="step"><div class="num">03</div><h3>Stratégie de vente</h3><p>Mise en valeur, diffusion multi-portails et sélection des acquéreurs qualifiés.</p></div>
-      <div class="step"><div class="num">04</div><h3>Accompagnement signature</h3><p>Suivi jusqu'à l'acte final, avec un seul interlocuteur du début à la fin.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="propertips">
-  <div class="wrap">
-    <div class="propertips-card reveal">
-      <div class="propertips-text">
-        <span class="eyebrow" style="color:var(--gold);">Propertips by iad</span>
-        <h2>Vous connaissez quelqu'un qui vend ou achète à Draveil ?</h2>
-        <p>Recommandez Francis à votre entourage et touchez <strong>jusqu'à 500 € en moyenne</strong> une fois la vente finalisée.</p>
-        <ol class="pt-steps">
-          <li><span>1</span> Vous connaissez un vendeur ou un acheteur</li>
-          <li><span>2</span> Vous le recommandez sur Propertips</li>
-          <li><span>3</span> La vente se conclut, vous êtes récompensé</li>
-        </ol>
-        <a href="https://propertips.com/signup.php?lang=fr_FR&code_invitation=W2X1AR1179351" target="_blank" rel="noopener" class="btn" style="background:var(--gold);">Devenir apporteur d'affaires</a>
+    <div class="quality-grid stagger">
+      <div class="quality-card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z" stroke="white" stroke-width="2" stroke-linejoin="round"/></svg></div>
+        <h3>Entre Seine et forêt</h3>
+        <p>Draveil profite d'un cadre naturel préservé : les bords de Seine, la forêt de Sénart aux portes de Mainville, et l'Île de loisirs du Port aux Cerises avec ses plages, activités nautiques et espaces de détente.</p>
       </div>
-      <div class="propertips-qr">
-        <img src="images/propertips-qr.png" alt="QR code inscription Propertips">
-        <span>Scannez pour vous inscrire gratuitement</span>
+      <div class="quality-card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z" stroke="white" stroke-width="2" stroke-linejoin="round"/></svg></div>
+        <h3>Quatre quartiers, quatre identités</h3>
+        <p>La Villa en bord de Seine, Mainville le hameau historique, Champrosay et son passé littéraire, Paris-Jardins et son patrimoine coopératif unique : chaque secteur a son propre caractère et son propre marché immobilier.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="avis" style="background:var(--iad-tint-2);">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Avis clients</span>
-      <h2>Ce qu'en disent les vendeurs de Draveil</h2>
-    </div>
-    <div class="testi-grid stagger">
-      <div class="testi"><div class="stars">★★★★★</div><p>"Estimation rapide et honnête, sans survente. Francis connaît vraiment le quartier."</p><div class="who"><div class="avatar">MC</div><div><strong>M. et Mme C.</strong><span>Vente à Draveil</span></div></div></div>
-      <div class="testi"><div class="stars">★★★★★</div><p>"Disponible, réactif, et un vrai suivi jusqu'à la signature. Rien à redire."</p><div class="who"><div class="avatar">SL</div><div><strong>S. Lefèvre</strong><span>Vente à Draveil</span></div></div></div>
-      <div class="testi"><div class="stars">★★★★★</div><p>"Un accompagnement clair du début à la fin, on sentait l'appui d'un vrai réseau derrière."</p><div class="who"><div class="avatar">JD</div><div><strong>J. Dubois</strong><span>Vente à Draveil</span></div></div></div>
+      <div class="quality-card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z" stroke="white" stroke-width="2" stroke-linejoin="round"/></svg></div>
+        <h3>Une vie culturelle riche</h3>
+        <p>Théâtre Donald Cardwell, Médiathèque Alphonse Daudet, Maison du Patrimoine et de la Culture, École municipale d'arts plastiques, conservatoire : une offre culturelle dense pour une ville de cette taille.</p>
+      </div>
+      <div class="quality-card">
+        <div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z" stroke="white" stroke-width="2" stroke-linejoin="round"/></svg></div>
+        <h3>Accès Paris & RER</h3>
+        <p>Draveil est desservie par un réseau de bus vers la gare de Juvisy-sur-Orge (RER C et D), avec un accès direct au centre de Paris en moins de 30 minutes.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -636,20 +428,6 @@
     <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.6 1.4 5.2L2 22l4.9-1.3C8.4 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm5.4 14.2c-.2.6-1.3 1.2-1.8 1.3-.5.1-1 .1-3.3-.7-2.8-1-4.6-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4.2.5.7 1.8.8 1.9.1.2.1.3 0 .5-.1.2-.1.3-.3.5-.1.2-.3.4-.4.5-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.7.8.2.1.4.2.4.3.1.3.1.7-.1 1.3z"/></svg>
   </a>
 </div>
-
-<script>
-  const communeSelect = document.getElementById('commune');
-  const surfaceInput = document.getElementById('surface');
-  const resultat = document.getElementById('resultat');
-  function updateEstimate(){
-    const prix = parseInt(communeSelect.value, 10);
-    const surface = parseFloat(surfaceInput.value);
-    if(!surface || surface <= 0){ resultat.textContent = "—"; return; }
-    resultat.textContent = Math.round(prix * surface).toLocaleString('fr-FR') + " €";
-  }
-  communeSelect.addEventListener('change', updateEstimate);
-  surfaceInput.addEventListener('input', updateEstimate);
-</script>
 
 <script>
   const revealEls = document.querySelectorAll('.reveal, .reveal-scale, .stagger');
